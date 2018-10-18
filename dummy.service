@@ -1,0 +1,13 @@
+[Unit]
+Description=FLask instance to serve test
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/server-data
+Environment="PATH=/home/ubuntu/server-env/bin"
+ExecStart=/home/ubuntu/server-env/bin/python server_dummy.py
+
+[Install]
+WantedBy=multi-user.target

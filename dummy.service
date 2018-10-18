@@ -1,5 +1,5 @@
 [Unit]
-Description=FLask instance to serve test
+Description=Flask instance to serve dummy server
 After=network.target
 
 [Service]
